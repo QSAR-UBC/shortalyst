@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "shortalyst"
+version = "0.1.0"
+description = "Quantum just-in-time compiling Shor’s algorithm with PennyLane and Catalyst"
+authors = ["UBC Quantum Software and Algorithms Research Lab", "PennyLane team"]
+repository = "https://github.com/QSAR-UBC/shortalyst/"
+license = "MIT"
+readme = "README.md"
+keywords = ["quantum-computing", "quantum-software"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pennylane = "^0.40"
+pennylane-catalyst = "^0.10"
+matplotlib = "^3.9"
+sympy = "^1.13"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2"
+black = "^24.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
